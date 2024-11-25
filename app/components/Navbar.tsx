@@ -9,11 +9,11 @@ export default function Navbar() {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-8xl px-2 sm:px-4 lg:px-6">
+      <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-10 items-center justify-between space-x-6">
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-8">
             <div className="relative">
-              <button className="flex items-center gap-1 text-base text-gray-600 hover:text-gray-900">
+              <button className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900">
                 English
                 <ChevronDown className="h-4 w-4" />
               </button>
@@ -26,7 +26,7 @@ export default function Navbar() {
               Support
             </Link>
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-8">
             <Link 
               href="/blog" 
               className="text-base text-gray-600 hover:text-gray-900"
@@ -35,7 +35,7 @@ export default function Navbar() {
             </Link>
 
             <div className="relative">
-              <button className="flex items-center gap-1 text-base text-gray-600 hover:text-gray-900">
+              <button className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900">
                 About us
                 <ChevronDown className="h-4 w-4" />
               </button>
@@ -45,7 +45,7 @@ export default function Navbar() {
       </div>
 
       <nav>
-        <div className="mx-auto max-w-8xl px-2 sm:px-4 lg:px-6">
+        <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <Link 
@@ -59,7 +59,7 @@ export default function Navbar() {
               <div className="hidden md:ml-10 md:flex md:items-center md:space-x-8">
                 <div className="relative">
                   <button 
-                    className="flex items-center gap-1 text-base text-gray-600 hover:text-gray-900"
+                    className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900"
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     Features
@@ -69,7 +69,7 @@ export default function Navbar() {
                 
                 <div className="relative">
                   <button 
-                    className="flex items-center gap-1 text-base text-gray-600 hover:text-gray-900"
+                    className="flex items-center gap-2 text-base text-gray-600 hover:text-gray-900"
                   >
                     Case Studies
                     <ChevronDown className="h-4 w-4" />
@@ -95,7 +95,7 @@ export default function Navbar() {
             <div className="hidden md:flex md:items-center md:space-x-4">
               <Link
                 href="/demo"
-                className="rounded-lg px-8 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-50 border border-[#387FF5]"
+                className="rounded-lg px-8 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-50 border-2 border-[#387FF5]"
               >
                 Get a demo
               </Link>
@@ -193,7 +193,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/demo"
-              className="block rounded-md px-8 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-50 border border-[#387FF5]"
+              className="block rounded-md px-8 py-2.5 text-base font-medium text-gray-700 hover:bg-gray-50 border-2 border-[#387FF5]"
             >
               Get a demo
             </Link>
