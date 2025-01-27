@@ -1,30 +1,65 @@
+"use client";
+
+import Image from "next/image";
+
 export default function PartnerSection() {
   const logos = [
     // First row
     [
-      { src: "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg", alt: "Google" },
-      { src: "https://img.shields.io/badge/Microsoft-0078D4?style=for-the-badge&logo=microsoft&logoColor=white", alt: "Microsoft" },
-      { src: "https://img.shields.io/badge/Amazon-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white", alt: "Amazon" },
-      { src: "https://img.shields.io/badge/Apple-000000?style=for-the-badge&logo=apple&logoColor=white", alt: "Apple" },
-      { src: "https://img.shields.io/badge/Meta-0467DF?style=for-the-badge&logo=meta&logoColor=white", alt: "Meta" },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+        alt: "Google",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+        alt: "Microsoft",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+        alt: "Amazon",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+        alt: "Apple",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg",
+        alt: "Meta",
+      },
     ],
     // Second row
     [
-      { src: "https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white", alt: "Slack" },
-      { src: "https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white", alt: "Spotify" },
-      { src: "https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white", alt: "Netflix" },
-      { src: "https://img.shields.io/badge/Uber-000000?style=for-the-badge&logo=uber&logoColor=white", alt: "Uber" },
-      { src: "https://img.shields.io/badge/Airbnb-FF5A5F?style=for-the-badge&logo=airbnb&logoColor=white", alt: "Airbnb" },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg",
+        alt: "Slack",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
+        alt: "Spotify",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+        alt: "Netflix",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.svg",
+        alt: "Uber",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
+        alt: "Airbnb",
+      },
     ],
-  ]
+  ];
 
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-4">
         <h2 className="mb-12 text-center text-lg text-gray-600">
-          160,000+ customers in over 120 countries grow their businesses with Neuros
+          160,000+ customers in over 120 countries grow their businesses with
+          Neuros
         </h2>
-        
+
         <div className="mx-auto max-w-6xl space-y-8">
           {logos.map((row, rowIndex) => (
             <div
@@ -36,10 +71,12 @@ export default function PartnerSection() {
                   key={logoIndex}
                   className="flex items-center justify-center px-4"
                 >
-                  <img
+                  <Image
                     src={logo.src}
                     alt={logo.alt}
-                    className="h-8 w-auto"
+                    width={100} // Set appropriate width
+                    height={32} // Set appropriate height
+                    className="h-8 w-auto object-contain grayscale opacity-70 hover:opacity-100"
                   />
                 </div>
               ))}
@@ -48,5 +85,5 @@ export default function PartnerSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
