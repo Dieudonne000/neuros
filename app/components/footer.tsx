@@ -96,7 +96,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 flex flex-col items-center justify-between border-t border-gray-200 pt-8 sm:flex-row">
           <p className="mb-4 text-sm text-gray-600 sm:mb-0">
-            ©2024 BONNY · All rights reserved.
+            ©2025 Jean Dieudonne · All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="/terms" className="text-sm text-gray-600 hover:text-gray-900">
